@@ -14,4 +14,9 @@ fi
 source ~/.bash_prompt
 source ~/.scripts/git-prompt.sh
 
+##PF_INFO="ascii title os host kernel uptime" /usr/bin/pfetch
+
+export PF_INFO="ascii title os host kernel wm uptime" 
+export PF_ASCII="voyager"
+
 pfetch
