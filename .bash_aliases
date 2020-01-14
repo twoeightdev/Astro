@@ -1,24 +1,30 @@
+# Basic
 alias ls='ls --color=auto'
 alias dir="dir --color=auto"
 alias grep="grep --color=auto"
 alias dmesg='dmesg --color'
 alias ll='ls -a'
+
+# Pacman
 alias up='sudo pacman -Syu && yay'
 alias search='pacman -Ss'
 alias pacu='sudo pacman -R'
 alias paci='sudo pacman -S'
 alias clean='sudo pacman -Rns $(pacman -Qtdq)'
+
+# Source
 alias rxres='xrdb ~/.Xresources'
 alias sbash='source ~/.bashrc'
+
+# Apps
 alias stfu='sudo evillimiter'
 alias ytgf='youtube-dl -F'
 alias ytdlv='youtube-dl -f'
 alias ytdla='youtube-dl -x -f bestaudio'
 alias gd='cd ~/dotfiles'
-alias ga='git add'
-alias gc='git commit -m'
-alias gpom='git push -u origin master'
 alias tl='tree -a'
+
+# Git
 alias da='dot add'
 alias dc='dot commit -m'
 alias dca='dot commit -am'

@@ -15,4 +15,4 @@ fi
 source ~/.bash_prompt
 source ~/.scripts/git-prompt.sh
 
-# Enable bash-completion
+pfetch
