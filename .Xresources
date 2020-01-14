@@ -24,8 +24,8 @@ xterm.vt100.backarrowKey: false
 xterm.ttyModes: erase ^?
 
 xterm.vt100.translations: #override \n\
-  Ctrl <Key> -: smaller-vt-font() \n\
-  Ctrl <Key> =: larger-vt-font()
+  Ctrl <Key> j: smaller-vt-font() \n\
+  Ctrl <Key> k: larger-vt-font()
 
 ! rofi
 

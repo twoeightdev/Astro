@@ -10,6 +10,7 @@ alias up='sudo pacman -Syu && yay'
 alias search='pacman -Ss'
 alias pacu='sudo pacman -R'
 alias paci='sudo pacman -S'
+alias pacqi='pacman -Qi'
 alias clean='sudo pacman -Rns $(pacman -Qtdq)'
 
 # Source
