@@ -1,41 +1,21 @@
-" Set compatibility to Vim only.
-set nocompatible
+let mapleader=" "
 
-" Helps force plug-ins to load correctly when it is turned back on below.
-filetype off
+call plug#begin('~/.vim/plugged')
 
-" Turn on syntax highlighting.
-syntax on
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
-" For plug-ins to load correctly.
-filetype plugin indent on
+call plug#end()
 
-" Turn off modelines
-set modelines=0
+set showcmd
 
-" Automatically wrap text that extends beyond the screen length.
-set wrap
+" Powerline
+set rtp+=/usr/lib/python3.8/site-packages/powerline/bindings/vim
 
-" Set line numbers
-set number
+" Always show statusline
+set laststatus=2
 
-" Set status line display
-set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ [BUFFER=%n]\ %{strftime('%c')}
-
-" Encoding
-set encoding=utf-8
-
-" Highlight matching search patterns
-set hlsearch
-
-" Enable incremental search
-set incsearch
-
-" Include matching uppercase words with lowercase search term
-set ignorecase
-
-" Include only uppercase words with uppercase search term
-set smartcase
+let g:powerline_pycmd = 'py3'
 
 " Remap ESC
 :imap jj <Esc>

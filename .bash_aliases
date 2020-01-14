@@ -3,7 +3,7 @@ alias ls='ls --color=auto'
 alias dir="dir --color=auto"
 alias grep="grep --color=auto"
 alias dmesg='dmesg --color'
-alias ll='ls -a'
+alias la='ls -a'
 
 # Pacman
 alias up='sudo pacman -Syu && yay'
