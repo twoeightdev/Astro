@@ -1,0 +1,69 @@
+# koltea independent hotkeys
+
+# main keybinds
+super + shift + {q,r}
+	bspc {quit,wm -r}
+super + Escape
+	pkill -USR1 -x sxhkd
+super + q
+	bspc node -c
+super + {_,shift + }{h,j,k,l}
+	bspc node -{f,s} {west,south,north,east}
+super + {_,shift + }{1-9,0}
+	bspc {desktop -f,node -d} '^{1-9,10}'
+
+# resize and move floating window
+alt + ctrl {h,j,k,l}
+	bspc node -z {left -5 0,bottom 0 5,top 0 -5,right 5 0}
+alt + {h,j,k,l}
+	bspc node -z {right -5 0,top 0 5,bottom 0 -5,left 5 0}
+alt + ctrl + shift {h,j,k,l}
+	bspc node -v {-5 0,0 5,0 -5,5 0}
+
+# window state & flags
+super + {t,shift + t,s,z}
+	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+super + ctrl + {m,x,y,z}
+	bspc node -g {marked,locked,sticky,private}
+
+# preselect
+super + ctrl + {h,j,k,l}
+	bspc node -p {west,south,north,east}
+super + ctrl + space
+	bspc node -p cancel
+
+# system
+super + x
+	~/.scripts/powermenu.sh
+XF86PowerOff
+	prompt "Shutdown computer?" "systemctl poweroff"
+
+# audiokeys
+XF86AudioMute
+	amixer sset Master toggle; pkill -RTMIN+10 $STATUSBAR
+XF86Audio{Raise,Lower}Volume
+	amixer sset Master 5%{+,-}; pkill -RTMIN+10 $STATUSBAR
+
+# recording
+Print
+	scrot ~/Screenshots/%Y-%m-%d-%T-screenshot.png
+
+# basic apps keybinds
+super + Return
+	$TERMINAL
+super + d
+	~/.scripts/rofi-apps.sh
+super + shift + f
+	pcmanfm
+super + n
+	$TERMINAL -e newsboat
+super + b
+	bspc desktop --focus ^2 && $BROWSER
+super + f
+	$TERMINAL -e ranger
+super + p
+	$TERMINAL -e ncmpcpp
+super + m
+	$TERMINAL -e calcurse
+
+
