@@ -4,6 +4,7 @@ alias dir="dir --color=auto"
 alias grep="grep --color=auto"
 alias dmesg='dmesg --color'
 alias la='ls -a'
+alias vimal='vim ~/.vimrc'
 
 # Pacman
 alias up='sudo pacman -Syu && yay'
