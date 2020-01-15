@@ -6,8 +6,7 @@ let mapleader=" "
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+Plug 'itchyny/lightline.vim'
 Plug 'preservim/nerdtree'
 
 call plug#end()
@@ -18,18 +17,7 @@ call plug#end()
 
 set relativenumber
 set noshowmode
-
-""""""""""""""""""""""""""""""""""""""""""""""""""
-" powerline & airline
-""""""""""""""""""""""""""""""""""""""""""""""""""
-
-let g:rehash256 = 1
-let g:Powerline_symbols='unicode'
-let g:Powerline_theme='long'
-let g:airline_powerline_fonts = 1
-let g:airline_theme='minimalist'
-let g:airline#extensions#tabline#enabled = 1
-let g:powerline_pycmd = 'py3'
+set laststatus=2
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " remaps keys
@@ -42,6 +30,14 @@ nnoremap W :w<CR>
 
 " Alias write & quit to Q
 nnoremap Q :wq<CR>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" lightline
+""""""""""""""""""""""""""""""""""""""""""""""""""
+
+let g:lightline = {
+      \ 'colorscheme': 'nord',
+      \ }
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " NERDTree
