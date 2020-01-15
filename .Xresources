@@ -20,8 +20,11 @@ xterm*faceSize: 11
 xterm*renderFont: true
 xterm*cursorBlink: false
 xterm*ScrollBar: false
+xterm.vt100.locale: true
+xterm.vt100.metaSendsEscape: true
 xterm.vt100.backarrowKey: false
 xterm.ttyModes: erase ^?
+xterm.vt100.geometry: 80x32
 
 xterm.vt100.translations: #override \n\
   Ctrl <Key> j: smaller-vt-font() \n\
@@ -50,8 +53,6 @@ Xcursor.theme: PearWhiteCursors
 
 ! color scheme
 
-
-! special
 *.foreground:   #c6c8d1
 *.background:   #161821
 *.cursorColor:  #c6c8d1
@@ -87,3 +88,4 @@ Xcursor.theme: PearWhiteCursors
 ! white
 *.color7  : #c6c8d1
 *.color15 : #d2d4de
+

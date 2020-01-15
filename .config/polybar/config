@@ -21,30 +21,16 @@
 ;---------------------------------------
 
 [colors]
-nord0 = #2E3440
-nord1 = #e5e9f0
-nord2 = #434C5E
-nord3 = #161821
-nord4 = #15171a
-nord5 = #e5e9f0
-nord6 = #ECEFF4
-nord7 = #e5e9f0
-nord8 = #e5e9f0
-nord9 = #D8DEE9
-nord10 = #5E81AC
-nord11 = #BF616A
-nord12 = #D08770
-nord13 = #EBCB8B
-nord14 = #e5e9f0
-nord15 = #B5616A
-nord16 = #e5e9f0
+bgcolor = #161821
+fgcolor = #e5e9f0
+bgalert = #bf616a
 
 ;---------------------------------------
 ;  GLOBAL
 ;---------------------------------------
 
 
-[bar/nord]
+[bar/koltea]
 monitor = ${env:MONITOR:}
 width = 100%
 height = 20
@@ -54,14 +40,14 @@ offset-x = 0
 offset-y = 0
 
 border-size = 4
-border-color = ${colors.nord3}
+border-color = ${colors.bgcolor}
 
-background = ${colors.nord3}
-foreground = ${colors.nord5}
+background = ${colors.bgcolor}
+foreground = ${colors.fgcolor}
 
 tray-position = right
 tray-padding = 2
-tray-background = ${colors.nord3}
+tray-background = ${colors.bgcolor}
 
 ;wm-restack = bspwm
 
@@ -88,8 +74,8 @@ type = internal/memory
 interval = 3
 format = <label>
 label = ﬙ %gb_used%  
-format-foreground = ${colors.nord16}
-format-background = ${colors.nord3}
+format-foreground = ${colors.fgcolor}
+format-background = ${colors.bgcolor}
 format-padding = 1
 
 [module/cpu]
@@ -100,8 +86,8 @@ type = internal/cpu
 interval = 1
 format = <label>
 label = 龍 %percentage%%
-format-foreground = ${colors.nord16}
-format-background = ${colors.nord3}
+format-foreground = ${colors.fgcolor}
+format-background = ${colors.bgcolor}
 format-padding = 1
 
 [module/mpd]
@@ -112,8 +98,8 @@ port = 6600
 ;format-online =   <icon-prev> <toggle> <icon-next>  <bar-progress>
 format-online =   <icon-prev> <toggle> <icon-next>  <label-song>
 ;alt icons = 
-format-online-background = ${colors.nord3}
-format-online-foreground = ${colors.nord16}
+format-online-background = ${colors.bgcolor}
+format-online-foreground = ${colors.fgcolor}
 format-online-padding = 2 
 icon-play = 
 icon-prev = 
@@ -138,9 +124,9 @@ label-active-padding = 1
 label-occupied = %index%
 label-occupied-padding = 1
 label-urgent = %index%
-label-active-background = ${colors.nord3}
-label-occupied-foreground = ${colors.nord16}
-label-occupied-background = ${colors.nord3}
+label-active-background = ${colors.bgcolor}
+label-occupied-foreground = ${colors.fgcolor}
+label-occupied-background = ${colors.bgcolor}
 
 ;---------------------------------------
 
@@ -151,8 +137,8 @@ label-occupied-background = ${colors.nord3}
 [module/xwindow]
 type = internal/xwindow
 
-format-foreground = ${colors.nord16}
-format-background = ${colors.nord3}
+format-foreground = ${colors.fgcolor}
+format-background = ${colors.bgcolor}
 format-padding = 1
 
 label = 类 %title% 
@@ -173,8 +159,8 @@ time = %I:%M:%S %p
 
 label =   %date%   %time%
 
-format-foreground = ${colors.nord16}
-format-background = ${colors.nord3}
+format-foreground = ${colors.fgcolor}
+format-background = ${colors.bgcolor}
 format-padding = 1
 date-alt = %A %d %B %Y
 time-alt = %I:%M:%S
@@ -197,28 +183,28 @@ use-ui-max = true
 ; Default: 5
 interval = 5
 format-volume = <ramp-volume><label-volume>
-format-volume-foreground = ${colors.nord16}
-format-volume-background = ${colors.nord3}
+format-volume-foreground = ${colors.fgcolor}
+format-volume-background = ${colors.bgcolor}
 
 label-volume = "%percentage% "
-label-volume-foreground = ${colors.nord16}
-label-volume-background = ${colors.nord3}
+label-volume-foreground = ${colors.fgcolor}
+label-volume-background = ${colors.bgcolor}
 label-muted = "  mute "
-label-muted-foreground = ${colors.nord16}
-label-muted-background = ${colors.nord3}
+label-muted-foreground = ${colors.fgcolor}
+label-muted-background = ${colors.bgcolor}
 
 ramp-volume-0 = "  "
-ramp-volume-0-foreground = ${colors.nord16}
-ramp-volume-0-background = ${colors.nord3}
+ramp-volume-0-foreground = ${colors.fgcolor}
+ramp-volume-0-background = ${colors.bgcolor}
 ramp-volume-1 = "  "
-ramp-volume-1-foreground = ${colors.nord16}
-ramp-volume-1-background = ${colors.nord3}
+ramp-volume-1-foreground = ${colors.fgcolor}
+ramp-volume-1-background = ${colors.bgcolor}
 ramp-volume-2 = "  "
-ramp-volume-2-foreground = ${colors.nord16}
-ramp-volume-2-background = ${colors.nord3}
+ramp-volume-2-foreground = ${colors.fgcolor}
+ramp-volume-2-background = ${colors.bgcolor}
 ramp-volume-3 = "  "
-ramp-volume-3-foreground = ${colors.nord16}
-ramp-volume-3-background = ${colors.nord3}
+ramp-volume-3-foreground = ${colors.fgcolor}
+ramp-volume-3-background = ${colors.bgcolor}
 
 ;------------------------------------------
 ;  TEMPERATURE
@@ -234,10 +220,10 @@ format-warn = <ramp> <label-warn>
 
 label = %temperature-c%
 label-warn = %temperature-c%
-label-warn-foreground = ${colors.nord11}
+label-warn-foreground = ${colors.bgalert}
 
 ramp-0 = 
 ramp-1 = 
 ramp-2 = 
-ramp-foreground = ${colors.nord1}
+ramp-foreground = ${colors.fgcolor}
 

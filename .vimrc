@@ -4,9 +4,6 @@
 
 let mapleader=" "
 
-set nocompatible
-filetype off
-
 call plug#begin('~/.vim/plugged')
 
 Plug 'vim-airline/vim-airline'
@@ -30,7 +27,7 @@ let g:rehash256 = 1
 let g:Powerline_symbols='unicode'
 let g:Powerline_theme='long'
 let g:airline_powerline_fonts = 1
-let g:airline_theme='base16_snazzy'
+let g:airline_theme='minimalist'
 let g:airline#extensions#tabline#enabled = 1
 let g:powerline_pycmd = 'py3'
 

@@ -34,7 +34,7 @@ super + ctrl + space
 
 # system
 super + x
-	~/.scripts/powermenu.sh
+	~/.scripts/dmenu-logout
 XF86PowerOff
 	prompt "Shutdown computer?" "systemctl poweroff"
 
