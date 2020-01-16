@@ -39,5 +39,6 @@ nitrogen --restore &
 picom --config ~/.config/picom.conf &
 mpd &
 numlockx &
+dunst &
 
 exec bspwm
