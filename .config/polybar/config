@@ -227,3 +227,4 @@ ramp-1 = 
 ramp-2 = 
 ramp-foreground = ${colors.fgcolor}
 
+; vim:ft=dosini

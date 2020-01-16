@@ -15,6 +15,7 @@ call plug#end()
 " basic settings
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
+syntax on
 set relativenumber
 set noshowmode
 set laststatus=2
