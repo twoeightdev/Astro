@@ -34,9 +34,9 @@ super + ctrl + space
 
 # system
 super + x
-	~/.scripts/dmenu-logout
+	dmenu-logout "Shutdown computer?" "shutdown -h now"
 XF86PowerOff
-	prompt "Shutdown computer?" "systemctl poweroff"
+	dmenu-logout "Shutdown computer?" "shutdown -h now"
 
 # audiokeys
 XF86AudioMute
@@ -52,7 +52,7 @@ Print
 super + Return
 	$TERMINAL
 super + d
-	~/.scripts/rofi-apps.sh
+	rofi-launcher
 super + shift + f
 	pcmanfm
 super + n

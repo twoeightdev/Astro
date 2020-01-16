@@ -4,7 +4,7 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-[ -f ~/.scripts/git-prompt.sh ] && . ~/.scripts/git-prompt.sh
+source git-prompt.sh
 
 # aliases
 alias ls='ls --color=auto'
@@ -34,7 +34,6 @@ alias dp='dot push'
 alias dl='dot pull'
 alias ds='dot status'
 alias dr='dot rm --cached'
-alias du='dot restore --staged'
 alias df='dot fetch'
 alias dfm='dot push origin master -f'
 alias dls='dot ls-tree -r HEAD --name-only'

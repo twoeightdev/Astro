@@ -415,5 +415,5 @@
 
 [play_sound]
     summary = "*"
-    script = ~/.scripts/alert.sh
+    script = ~/.local/bin/alert
 

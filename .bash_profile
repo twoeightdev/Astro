@@ -11,3 +11,4 @@ export BROWSER="firefox"
 
 # Clean up
 export INPUTRC="$HOME/.config/inputrc"
+export PATH="$PATH:$(du "$HOME/.local/bin/" | cut -f2 | tr '\n' ':' | sed 's/:*$//')"
