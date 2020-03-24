@@ -1,4 +1,3 @@
-## My Personal dotfiles
 
 ![Rofi preview](https://i.imgur.com/xMUkDcr.png)
 thanks to [addy-dclxvi](https://github.com/addy-dclxvi) for this awesome rofi :)
